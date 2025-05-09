@@ -1,3 +1,5 @@
+Link to Figma File: https://www.figma.com/design/QPpRHvZcr4TQ4spHlm3WtZ/Figma-component-practice?node-id=0-1
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
