@@ -4,7 +4,8 @@
 
 .nav {
     background-color: #2F2E2E;
-    padding: 21;
+    padding: 12 16 12 16;
+    border-bottom: 3 solid #2F2E2E;
     
     &:hover {
         background-color: #333333;
@@ -40,16 +41,17 @@
 }
 .login {
     background-color: #ffffff;
-    border: 2px solid #F41B5D;
+    border: 3px solid #F41B5D;
     color: #F41B5D;
-    padding: 19;
-    border-radius: 6px;
+    padding: 12 16 12 16;
+    border-radius: 4px;
     
-    &:hover {
-        border: 3px solid #F41B5D;
+    &:hover {     
+        box-shadow:0px 0px 0px 1px #F41B5D inset;   
     }
     &:focus {
-        border: 2px solid #F41B5D;
+        border-style: inset;
+        border: 1px solid #F41B5D;
         background-color: #e5e4e4;
     }
 
@@ -83,7 +85,8 @@
 
 .quote {
     background-color: #F41B5D;
-    padding: 21;
+    border: 3px solid #F41B5D;
+    padding: 12 16 12 16;
     color: #ffffff;
     border-radius: 6px;
     font-weight: 500;
