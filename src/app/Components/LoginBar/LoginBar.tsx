@@ -8,9 +8,9 @@ export function LoginBar(){
         <Stack flexDirection={'row'} justifyContent='space-between' alignItems='center' style={{flex: 1, backgroundColor: '#ffffff', paddingTop: 8, paddingBottom: 8, paddingLeft: 12, paddingRight: 12}}>
             <Stack flexDirection={'row'} alignItems={'center'}>  
             <img src={logo.src} alt='red logo vitality' height={55} width={55}/>
-            <MainBtn title='HealthInsurance' type='dropdown'/>
-            <MainBtn title='Life Insurance' type='dropdown'/>
-            <MainBtn title='Rewardse' type='dropdown'/>
+            <MainBtn title='Health insurance' type='dropdown'/>
+            <MainBtn title='Life insurance' type='dropdown'/>
+            <MainBtn title='Rewards' type='dropdown'/>
             <MainBtn title='Support' type='dropdown'/>
         
             </Stack>
