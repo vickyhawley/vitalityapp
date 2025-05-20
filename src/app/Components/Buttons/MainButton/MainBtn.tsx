@@ -35,9 +35,9 @@ export function MainBtn({title, type, onClick, icon}: iMainbtn) {
         }else(styles['cta'])
     }
 
-    // const chevronStyles
+  
     return(
-        <a onClick={onClick}  style={{textDecoration: 'none', color: 'white'}}><div className={buttonStyles()}>
+        <a onClick={onClick}  style={{textDecoration: 'none', color: 'white', textAlign: 'center'}}><div className={buttonStyles()}>
             <p style={{fontWeight: 600}}>{title}</p>
             {icon}
         </div></a>
