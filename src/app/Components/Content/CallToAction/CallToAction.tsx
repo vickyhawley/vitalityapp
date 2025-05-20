@@ -20,7 +20,7 @@ export function CallToAction({title, description, btnTitle, titleColor, descript
             <Stack  alignItems='flex-start' flexDirection='column' justifyContent={'flex-start'} style={{width: '60%'}}>
                 <h1 style={{fontSize: 56, letterSpacing: -1, textWrap: 'balance',lineHeight: 1.14, fontWeight: 800, width: '70%', color: titleColor}}>{title}</h1>
                 <p style={{width: '80%', fontSize: 24, fontWeight: 500, color: descriptionColor}}>{description}</p>
-                <div style={{marginTop: 24}}><MainBtn title={btnTitle} type='cta'/></div>
+                <div style={{marginTop: 24}}><MainBtn onClick={() => {}} title={btnTitle} type='cta'/></div>
             </Stack>
             <Stack justifyContent='flex-start'  alignItems='center' >
                 <img src={image.src} style={{borderRadius: '100%', alignSelf: 'flex-start'}} alt='people communicating over a computer' height={350} width={350}/>

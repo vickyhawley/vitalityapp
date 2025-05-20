@@ -1,6 +1,8 @@
+'use client';
+
 import { Stack } from "@mui/material";
 import { Card } from "../Cards/Card";
-import { Description } from "@mui/icons-material";
+
 
 interface iCoverSection{
     title: string;
@@ -16,8 +18,8 @@ export function CoverSection({title, description}: iCoverSection){
             </Stack>
             
             <Stack flexDirection={'row'}>
-            <Card title='Title' description="blah"  shape='portrait'/>
-            <Card title='Title' description="blah" shape='portrait'/>
+            <Card title='Title' description="Pays out to your loved ones if you die or become terminally ill"  shape='portrait'/>
+            <Card title='Title' description="Pays out to your loved ones if you die or become terminally ill" shape='portrait'/>
            
             </Stack>
         </Stack>

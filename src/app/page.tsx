@@ -1,3 +1,4 @@
+"use client";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -9,15 +10,21 @@ import { Hero } from "./Components/Hero/Hero";
 import defaqto from './assets/defaqto.png';
 import { CoverSection } from "./Components/CoverSection/CoverSection";
 import { LivelongerSection } from "./Components/LiveLonger/LivelongerSection";
+import { useState } from 'react';
+import { MegaMenu } from './Components/MegaMenu/MegaMenu';
 
 
+type dropdown = 'health' | 'life' | 'rewards' | 'support' | 'none'
 export default function Homepage() {
+  const [dropDownType, setDropDownType] = useState<dropdown>('none')
+
 
 
   return(
-      <Stack>
+      <Stack style={{height: dropDownType !== 'none' ? '100vh' : '100%'}}>
         <NavBar />
-         <LoginBar />
+         <LoginBar dropDownType={setDropDownType}/>
+         {dropDownType !== 'none' && <MegaMenu type={dropDownType}/>}
          <Hero />
          <Stack flexDirection={'row'} alignItems='center' justifyContent={'space-between'} style={{backgroundColor: '#ffffff', paddingTop: 8, paddingBottom: 8, paddingRight: '12%', paddingLeft: '12%'}}>
           <h2 style={{color: '#000000'}}>Join over 1.9 million Vitality UK members</h2>

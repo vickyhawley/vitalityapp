@@ -1,18 +1,18 @@
-import { Link, Stack } from "@mui/material";
 import styles from  './mainbtn.module.scss';
-import { ChevronDown } from "../../Icons/ChevronDown/ChevronDown";
+import { ReactNode } from "react";
+
 
 
 interface iMainbtn{
     title: string;
     type: 'nav' | 'cta' | 'banner' | 'dropdown' | 'login' | 'quote';
-
+    onClick: () => void;
+    icon?: ReactNode;
 }
 
 
 
-export function MainBtn({title, type}: iMainbtn) {
-
+export function MainBtn({title, type, onClick, icon}: iMainbtn) {
 
     const buttonStyles = () => {
         if(type == 'nav'){
@@ -37,10 +37,9 @@ export function MainBtn({title, type}: iMainbtn) {
 
     // const chevronStyles
     return(
-        <Link style={{textDecoration: 'none', color: 'white'}}><div className={buttonStyles()}>
+        <a onClick={onClick}  style={{textDecoration: 'none', color: 'white'}}><div className={buttonStyles()}>
             <p style={{fontWeight: 600}}>{title}</p>
-            {type === 'dropdown' && <ChevronDown color={'#000000'}/>}
-
-        </div></Link>
+            {icon}
+        </div></a>
     )
 }
