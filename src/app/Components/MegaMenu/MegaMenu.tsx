@@ -15,7 +15,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
             <Stack tabIndex={0} className={styles['mm-innerwrapper']}>
                
                     <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomLeftRadius: 10}}>
-                        <div tabIndex={0} style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex', flexDirection: 'column', paddingLeft: 50, paddingRight: 32, gap: 10}}>
+                        <div tabIndex={0} className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
                             <h2 style={{color: 'black'}}>Get Health Quote in minutes</h2>
                             <p style={{color: 'black'}}>5 Star Defaqto rated health insurance, with rewards for healthy living. From £1.45 a day.</p>
                             <MainBtn ariaLabel="Get quote button" type='quote' onClick={() => {}} title='Get a health Quote'/>
@@ -24,7 +24,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                     </Stack>
                     
                     <Stack tabIndex={0} className={styles['mm-column']}>
-                    <div tabIndex={0} style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--border']}>
                         <h2 style={{color: 'black'}}>Health Title</h2>
                         <a href='#' style={{color: 'black'}}>Health link</a>
                         <a href='#' style={{color: 'black'}}>Health link</a>
@@ -35,7 +35,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                     </div>
                     </Stack>
                     <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomRightRadius: 10}}>
-                    <div tabIndex={0} style={{flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--noborder']}>
                     <h2 style={{color: 'black'}}>Health Title</h2>
                     <a href='#' style={{color: 'black'}}>Health link</a>
                         <a href='#' style={{color: 'black'}}>Health link</a>
@@ -51,7 +51,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
             {activeTypes === 'life' && (
                <Stack tabIndex={0} className={styles['mm-innerwrapper']} >
                <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomLeftRadius: 10}}>
-               <div tabIndex={0} style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex', flexDirection: 'column', paddingLeft: 50, paddingRight: 32, gap: 10}}>
+               <div tabIndex={0} className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
                             <h2 style={{color: 'black'}}>Get a life quote in minutes</h2>
                             <p style={{color: 'black'}}>5 Star Defaqto rated health insurance, with rewards for healthy living. From £1.45 a day.</p>
                             <MainBtn ariaLabel="Get quote button" type='quote' onClick={() => {}} title='Get a life Quote'/>
@@ -59,7 +59,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                         </div>                    </Stack>
                     
                     <Stack tabIndex={0} className={styles['mm-column']}>
-                    <div tabIndex={0} style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--border']}>
                     <h2 style={{color: 'black'}}>Life Title</h2>
                     <a href='#' style={{color: 'black'}}>Life link</a>
                         <a href='#' style={{color: 'black'}}>Life link</a>
@@ -70,7 +70,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                     </div>
                     </Stack>
                     <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomRightRadius: 10}}>
-                    <div tabIndex={0} style={{flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--noborder']}>
                     <h2 style={{color: 'black'}}>Life Title</h2>
                     <a href='#' style={{color: 'black'}}>Life link</a>
                         <a href='#' style={{color: 'black'}}>Life link</a>
@@ -85,7 +85,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
             {activeTypes === 'rewards' && (
             <Stack tabIndex={0} className={styles['mm-innerwrapper']}>
             <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomLeftRadius: 10}}>
-            <div style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex', flexDirection: 'column', paddingLeft: 50, paddingRight: 32, gap: 10}}>
+            <div className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
                             <h2 style={{color: 'black'}}>How the Vitality Programme works</h2>
                             <p style={{color: 'black'}}>Looking to get healthier or feel less stressed? Whatever your reason for making a change, we’ve got the benefits and rewards to help you on your way.</p>
                             <MainBtn ariaLabel="Get quote button" type='quote' onClick={() => {}} title='Explore Vitalty rewards'/>
@@ -93,7 +93,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                         </div>                    </Stack>
                     
                     <Stack tabIndex={0} className={styles['mm-column']}>
-                    <div tabIndex={0} style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--border']}>
                     <h2 style={{color: 'black'}}>Rewards Title</h2>
                     <a href='#' style={{color: 'black'}}>Rewards link</a>
                         <a href='#' style={{color: 'black'}}>Rewards link</a>
@@ -104,7 +104,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                     </div>
                     </Stack>
                     <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomRightRadius: 10}}>
-                    <div tabIndex={0} style={{flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--noborder']}>
                     <h2 style={{color: 'black'}}>Rewards Title</h2>
                     <a href='#' style={{color: 'black'}}>Rewards link</a>
                         <a href='#' style={{color: 'black'}}>Rewards link</a>
@@ -119,7 +119,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
             {activeTypes === 'support' && (
              <Stack tabIndex={0} className={styles['mm-innerwrapper']}>
              <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomLeftRadius: 10}}>
-             <div tabIndex={0} style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex', flexDirection: 'column', paddingLeft: 50, paddingRight: 32, gap: 10}}>
+             <div tabIndex={0} className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
                             <h2 style={{color: 'black'}}>Vitality points question?</h2>
                             <p style={{color: 'black'}}>Find out how to recover any Vitality points that are missing from your statement or submit evidence of your health appointments to get Vitality points.</p>
                             <MainBtn ariaLabel="Get quote button" type='quote' onClick={() => {}} title='Go to missing points guide'/>
@@ -127,7 +127,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                         </div>                    </Stack>
                     
                     <Stack tabIndex={0} className={styles['mm-column']} >
-                    <div tabIndex={0} style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--border']}>
                     <h2 tabIndex={0} style={{color: 'black'}}>Support Title</h2>
                     <a href='#' style={{color: 'black'}}>Support link</a>
                         <a href='#' style={{color: 'black'}}>Support link</a>
@@ -138,7 +138,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
                     </div>
                     </Stack>
                     <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomRightRadius: 10}}>
-                    <div tabIndex={0} style={{flex: 1, display: 'flex',flexDirection: 'column', gap: 10}}>
+                    <div tabIndex={0} className={styles['mm-column--noborder']}>
                     <h2 style={{color: 'black'}}>Support Title</h2>
                     <a href='#' style={{color: 'black'}}>Support link</a>
                         <a href='#' style={{color: 'black'}}>Support link</a>
