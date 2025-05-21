@@ -7,7 +7,6 @@ interface iCard{
     title: string;
     shape: 'portrait' | 'landscape';
     description: string;
-
 }
 
 export function Card({title, shape, description}:iCard){
