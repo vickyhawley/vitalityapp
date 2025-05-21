@@ -86,32 +86,32 @@ export function MegaMenu({activeTypes}:iMegaMenu){
             <Stack tabIndex={0} className={styles['mm-innerwrapper']}>
             <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomLeftRadius: 10}}>
             <div tabIndex={0} className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
-                            <h2 style={{color: 'black'}}>How the Vitality Programme works</h2>
-                            <p style={{color: 'black'}}>Looking to get healthier or feel less stressed? Whatever your reason for making a change, we’ve got the benefits and rewards to help you on your way.</p>
+                            <h2 className={styles['mm-columntext--black']}>How the Vitality Programme works</h2>
+                            <p className={styles['mm-columntext--black']}>Looking to get healthier or feel less stressed? Whatever your reason for making a change, we’ve got the benefits and rewards to help you on your way.</p>
                             <MainBtn ariaLabel="Get quote button" type='quote' onClick={() => {}} title='Explore Vitalty rewards'/>
                             
                         </div>                    </Stack>
                     
                     <Stack tabIndex={0} className={styles['mm-column']}>
                     <div tabIndex={0} className={styles['mm-column--border']}>
-                    <h2 style={{color: 'black'}}>Rewards Title</h2>
-                    <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
+                    <h2 className={styles['mm-columntext--black']}>Rewards Title</h2>
+                    <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
                     </div>
                     </Stack>
                     <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomRightRadius: 10}}>
                     <div tabIndex={0} className={styles['mm-column--noborder']}>
-                    <h2 style={{color: 'black'}}>Rewards Title</h2>
-                    <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
-                        <a href='#' style={{color: 'black'}}>Rewards link</a>
+                    <h2 className={styles['mm-columntext--black']}>Rewards Title</h2>
+                    <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Rewards link</a>
                     </div>
                     </Stack>
     </Stack> 
@@ -120,32 +120,32 @@ export function MegaMenu({activeTypes}:iMegaMenu){
              <Stack tabIndex={0} className={styles['mm-innerwrapper']}>
              <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomLeftRadius: 10}}>
              <div tabIndex={0} className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
-                            <h2 style={{color: 'black'}}>Vitality points question?</h2>
-                            <p style={{color: 'black'}}>Find out how to recover any Vitality points that are missing from your statement or submit evidence of your health appointments to get Vitality points.</p>
+                            <h2 className={styles['mm-columntext--black']}>Vitality points question?</h2>
+                            <p className={styles['mm-columntext--black']}>Find out how to recover any Vitality points that are missing from your statement or submit evidence of your health appointments to get Vitality points.</p>
                             <MainBtn ariaLabel="Get quote button" type='quote' onClick={() => {}} title='Go to missing points guide'/>
                             <MainBtn ariaLabel="Login to app" type='login' onClick={() => {}} title='Submit evidence'/>
                         </div>                    </Stack>
                     
                     <Stack tabIndex={0} className={styles['mm-column']} >
                     <div tabIndex={0} className={styles['mm-column--border']}>
-                    <h2 tabIndex={0} style={{color: 'black'}}>Support Title</h2>
-                    <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
+                    <h2 tabIndex={0} className={styles['mm-columntext--black']}>Support Title</h2>
+                    <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
                     </div>
                     </Stack>
                     <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomRightRadius: 10}}>
                     <div tabIndex={0} className={styles['mm-column--noborder']}>
-                    <h2 style={{color: 'black'}}>Support Title</h2>
-                    <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
-                        <a href='#' style={{color: 'black'}}>Support link</a>
+                    <h2 className={styles['mm-columntext--black']}>Support Title</h2>
+                    <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
+                        <a href='#' className={styles['mm-columntext--black']}>Support link</a>
                     </div>
                     </Stack>
      </Stack> 
