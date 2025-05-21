@@ -14,7 +14,6 @@ interface iCallToAction{
 
 export function CallToAction({title, description, btnTitle, titleColor, descriptionColor, backgroundColor, borderRadius}: iCallToAction){
 
-    console.log('what is the image import?', image)
     return(
         <Stack justifyContent={'center'} alignItems={'center'}  flexDirection='row' gap={4} style={{backgroundColor: backgroundColor, borderRadius: borderRadius}}>
             <Stack  alignItems='flex-start' flexDirection='column' justifyContent={'flex-start'} style={{width: '60%'}}>

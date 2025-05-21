@@ -1,17 +1,17 @@
+'use client';
 import { Stack } from "@mui/material";
 import styles from './megamenu.module.scss';
 import { MainBtn } from "../Buttons/MainButton/MainBtn";
 
-interface iMegaMenu{
-    type: string;
+interface iMegaMenu {
+    activeTypes: 'health' | 'life' | 'rewards' | 'support';
 }
 
-export function MegaMenu({type}: iMegaMenu){
-
+export function MegaMenu({activeTypes}:iMegaMenu){
 
     return(
         <Stack className={styles['mm-wrapper']}>
-            {type === 'health' && (     
+            {activeTypes === 'health' && (     
             <Stack style={{ height: '100vh', flex: 1,flexDirection: 'row', paddingBottom: 300 }}>
                
                     <Stack style={{backgroundColor: 'white', height: '50vh', flex: 1, borderBottomLeftRadius: 10, padding: 32}}>
@@ -48,7 +48,7 @@ export function MegaMenu({type}: iMegaMenu){
                    
             </Stack>          
             )}
-            {type === 'life' && (
+            {activeTypes === 'life' && (
                <Stack style={{ height: '100vh', flex: 1,flexDirection: 'row', paddingBottom: 300, }}>
                <Stack style={{backgroundColor: 'white', height: '50vh', flex: 1, borderBottomLeftRadius: 10, padding: 32}}>
                <div style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex', flexDirection: 'column', paddingLeft: 50, paddingRight: 32, gap: 10}}>
@@ -82,7 +82,7 @@ export function MegaMenu({type}: iMegaMenu){
                     </Stack>
        </Stack> 
         )}
-            {type === 'rewards' && (
+            {activeTypes === 'rewards' && (
             <Stack style={{ height: '100vh', flex: 1,flexDirection: 'row', paddingBottom: 300, }}>
             <Stack style={{backgroundColor: 'white', height: '50vh', flex: 1, borderBottomLeftRadius: 10, padding: 32}}>
             <div style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex', flexDirection: 'column', paddingLeft: 50, paddingRight: 32, gap: 10}}>
@@ -116,7 +116,7 @@ export function MegaMenu({type}: iMegaMenu){
                     </Stack>
     </Stack> 
         )}
-            {type === 'support' && (
+            {activeTypes === 'support' && (
              <Stack style={{ height: '100vh', flex: 1,flexDirection: 'row', paddingBottom: 300, }}>
              <Stack style={{backgroundColor: 'white', height: '50vh', flex: 1, borderBottomLeftRadius: 10, padding: 32}}>
              <div style={{ borderRight: '2px solid #F1F1F1', flex: 1, display: 'flex', flexDirection: 'column', paddingLeft: 50, paddingRight: 32, gap: 10}}>

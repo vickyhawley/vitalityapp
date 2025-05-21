@@ -12,19 +12,17 @@ import { CoverSection } from "./Components/CoverSection/CoverSection";
 import { LivelongerSection } from "./Components/LiveLonger/LivelongerSection";
 import { useState } from 'react';
 import { MegaMenu } from './Components/MegaMenu/MegaMenu';
+import { useSectionState } from './Hooks/useSectionState';
 
 
-type dropdown = 'health' | 'life' | 'rewards' | 'support' | 'none'
 export default function Homepage() {
-  const [dropDownType, setDropDownType] = useState<dropdown>('none')
-
-
+  const {handleClick, activeType} = useSectionState()
 
   return(
-      <Stack style={{height: dropDownType !== 'none' ? '100vh' : '100%'}}>
+      <Stack style={{height: activeType !== 'none' ? '100vh' : '100%'}}>
         <NavBar />
-         <LoginBar dropDownType={setDropDownType}/>
-         {dropDownType !== 'none' && <MegaMenu type={dropDownType}/>}
+         <LoginBar handleClick={handleClick} activeType={activeType} />
+         {activeType && activeType !== 'none' && <MegaMenu activeTypes={activeType}/>}
          <Hero />
          <Stack flexDirection={'row'} alignItems='center' justifyContent={'space-between'} style={{backgroundColor: '#ffffff', paddingTop: 8, paddingBottom: 8, paddingRight: '12%', paddingLeft: '12%'}}>
           <h2 style={{color: '#000000'}}>Join over 1.9 million Vitality UK members</h2>
