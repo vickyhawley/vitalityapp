@@ -85,7 +85,7 @@ export function MegaMenu({activeTypes}:iMegaMenu){
             {activeTypes === 'rewards' && (
             <Stack tabIndex={0} className={styles['mm-innerwrapper']}>
             <Stack tabIndex={0} className={styles['mm-column']} style={{borderBottomLeftRadius: 10}}>
-            <div className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
+            <div tabIndex={0} className={styles['mm-column--border']} style={{paddingLeft: 50, paddingRight: 32}}>
                             <h2 style={{color: 'black'}}>How the Vitality Programme works</h2>
                             <p style={{color: 'black'}}>Looking to get healthier or feel less stressed? Whatever your reason for making a change, we’ve got the benefits and rewards to help you on your way.</p>
                             <MainBtn ariaLabel="Get quote button" type='quote' onClick={() => {}} title='Explore Vitalty rewards'/>
