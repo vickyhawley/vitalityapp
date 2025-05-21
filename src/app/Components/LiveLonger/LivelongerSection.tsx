@@ -5,7 +5,7 @@ import { CallToAction } from "../Content/CallToAction/CallToAction";
 export function LivelongerSection(){
 
     return(
-        <Stack alignItems='center' justifyContent='center' style={{backgroundColor: '#F4F7FA', padding: '3.2rem'}}>
+        <Stack tabIndex={0} alignItems='center' justifyContent='center' style={{backgroundColor: '#F4F7FA', padding: '3.2rem'}}>
             <CallToAction 
             backgroundColor="#33404D" 
             titleColor="white" 

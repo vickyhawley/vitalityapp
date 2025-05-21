@@ -5,12 +5,12 @@ import { MainBtn } from "../Buttons/MainButton/MainBtn";
 
 export function NavBar(){
     return(
-        <Stack style={{backgroundColor: '#2F2E2E'}} flexDirection={'row'} alignContent={"flex-start"}>
-            <MainBtn title='Personal' type="nav" />
-            <MainBtn title='Business' type="nav"/>
-            <MainBtn title='Advisors' type="nav"/>
-            <MainBtn title='Providers' type="nav"/>
-            <MainBtn title='Careers' type="nav"/>
+        <Stack tabIndex={0} style={{backgroundColor: '#2F2E2E'}} flexDirection={'row'} alignContent={"flex-start"}>
+            <MainBtn onClick={() => {}} ariaLabel="Open Personal page" title='Personal' type="nav" />
+            <MainBtn onClick={() => {}} ariaLabel="Open Business page" title='Business' type="nav"/>
+            <MainBtn onClick={() => {}} ariaLabel="Open Advisors page" title='Advisors' type="nav"/>
+            <MainBtn onClick={() => {}} ariaLabel="Open Providers page" title='Providers' type="nav"/>
+            <MainBtn onClick={() => {}} ariaLabel="Open Careers page" title='Careers' type="nav"/>
         </Stack>
     )
 }

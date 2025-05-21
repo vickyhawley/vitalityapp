@@ -24,7 +24,7 @@ export default function Homepage() {
          <LoginBar handleClick={handleClick} activeType={activeType} />
          {activeType && activeType !== 'none' && <MegaMenu activeTypes={activeType}/>}
          <Hero />
-         <Stack flexDirection={'row'} alignItems='center' justifyContent={'space-between'} style={{backgroundColor: '#ffffff', paddingTop: 8, paddingBottom: 8, paddingRight: '12%', paddingLeft: '12%'}}>
+         <Stack tabIndex={0} flexDirection={'row'} alignItems='center' justifyContent={'space-between'} style={{backgroundColor: '#ffffff', paddingTop: 8, paddingBottom: 8, paddingRight: '12%', paddingLeft: '12%'}}>
           <h2 style={{color: '#000000'}}>Join over 1.9 million Vitality UK members</h2>
           <img src={defaqto.src} alt='' height={75} width={105} />
          </Stack>

@@ -10,7 +10,16 @@
     z-index: 2 !important;
 }
 
-.mm-innerWrapper {
-    display: flex;
-    z-index: 3 !important;
+.mm-innerwrapper {
+    height: 100vh; 
+    flex: 1;
+    flex-direction: row !important;
+    padding-bottom: 300px;
+}
+
+.mm-column {
+    background-color: white; 
+    height: 50vh;
+    flex: 1;
+    padding: 32
 }

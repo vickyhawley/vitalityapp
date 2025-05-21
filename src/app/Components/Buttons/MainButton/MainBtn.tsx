@@ -8,11 +8,12 @@ interface iMainbtn{
     type: 'nav' | 'cta' | 'banner' | 'dropdown' | 'login' | 'quote';
     onClick: () => void;
     icon?: ReactNode;
+    ariaLabel: string;
 }
 
 
 
-export function MainBtn({title, type, onClick, icon}: iMainbtn) {
+export function MainBtn({title, type, onClick, icon, ariaLabel}: iMainbtn) {
 
     const buttonStyles = () => {
         if(type == 'nav'){
@@ -37,7 +38,7 @@ export function MainBtn({title, type, onClick, icon}: iMainbtn) {
 
   
     return(
-        <a onClick={onClick}  style={{textDecoration: 'none', color: 'white', textAlign: 'center'}}><div className={buttonStyles()}>
+        <a aria-label={ariaLabel} onClick={onClick}  style={{textDecoration: 'none', color: 'white', textAlign: 'center'}}><div className={buttonStyles()}>
             <p style={{fontWeight: 600}}>{title}</p>
             {icon}
         </div></a>
